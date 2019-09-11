@@ -1,1 +1,1 @@
-# EasySite
+# LOLsite.github.io
