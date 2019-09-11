@@ -6,39 +6,41 @@
     <title></title>
   </head>
   <body>
-    <div id="chat">
-  <table>
-    <tr>
-      <td>Имя</td>
-      <td>Сообщение</td>
-      <td>Дата</td>
-    </tr>
-    <tr>
-      <td>Имя</td>
-      <td>Сообщение</td>
-      <td>Дата</td>
-    </tr>
-  </table>
-</div>
-<p>
-  <input type="text" name="message" id="message" />
-  <input type="button" value="Отправить" onclick="send()" />
-</p>
-<script type="text/javascript">
-  function send() {
-    var message = document.getElementById("message").value;
-    var name = "Гость";
-  }
-  function update() {
-  }
-  setInterval("update()", 1000);
-  <?php
-  /* Получаем данные, полученные из JavaScript */
-  $message = $_POST["message"];
-  $name = $_POST["name"];
-  $date = date(); // Узнаём текущее время и дату
-  /* Здесь добавляем в таблицу новую запись */
-?> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+
+<!-- Осталось настроить сам чат и запустить, для этого пишем небольшой скрипт. -->
+<div id="html-chat"></div>
+<style>
+/* Здесь настроим css стили для чата*/
+.holder-html-chat{ border: 1px solid #ccc;padding:10px;background-color: #fff;width: 600px;}
+.html-chat-history{ max-width: 600px; overflow: auto;max-height: 900px; border: 1px solid #ccc;padding: 5px;}
+.html-chat-js-name{ margin-top:10px; }
+.html-chat-js-input{ max-width: 600px;max-height: 100px;width: 600px;margin-top:10px; }
+.html-chat-js-button-holder{ margin-bottom: 0px;margin-top: 10px; }
+.html-chat-js-button-holder input{ width: 220px; }
+.html-chat-js-answer{ float:right; }
+.html-chat-js-answer a{ color: #777;font-size: 12px; font-family: cursive;}
+.html-chat-js-answer a:hover{ color: #338;font-size: 12px; font-family: cursive;}
+.html-chat-msg{ margin: 0px; }
+</style>
+
+<script>
+
+   /**
+    * Чат работает на comet-server.ru
+    * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+    */
+    $(document).ready(function()
+    {
+       // Запуск api комет сервера
+       CometServer().start({dev_id: 15 }) // Идентификатор разработчика на comet-server.ru
+
+       // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+       htmljs_Chat_Init( $("#html-chat") )
+    });
 </script>
   </body>
 </html>
