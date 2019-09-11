@@ -2,10 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
-      <p class="one">ПРИВЕТСТВУЮ ЮНЫЕ ЭЩКЕРИКИ</p>
+    <div id="chat">
+  <table>
+    <tr>
+      <td>Имя</td>
+      <td>Сообщение</td>
+      <td>Дата</td>
+    </tr>
+    <tr>
+      <td>Имя</td>
+      <td>Сообщение</td>
+      <td>Дата</td>
+    </tr>
+  </table>
+</div>
+<p>
+  <input type="text" name="message" id="message" />
+  <input type="button" value="Отправить" onclick="send()" />
+</p>
+<script type="text/javascript">
+  function send() {
+    var message = document.getElementById("message").value;
+    var name = "Гость";
+  }
+  function update() {
+  }
+  setInterval("update()", 1000);
+  <?php
+  /* Получаем данные, полученные из JavaScript */
+  $message = $_POST["message"];
+  $name = $_POST["name"];
+  $date = date(); // Узнаём текущее время и дату
+  /* Здесь добавляем в таблицу новую запись */
+?> 
+</script>
   </body>
 </html>
