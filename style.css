@@ -1,6 +1,15 @@
- .one {
-   vertical-align:middle
+ p.one {
+   font-weight: bolder;
    color:white;
    font-size: 50px
  }
-      }
+
+ p.two {
+   font-size: 40px;
+   font-weight: bold;
+ }
+
+ div.three {
+   font-weight: bold;
+   font-size: 30px;
+ }
