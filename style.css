@@ -1,6 +1,8 @@
  p.one {
+   text-shadow: 10px 10px 11px green;
+   margin: 0px;
    font-weight: bolder;
-   color:white;
+   color:lime;
    font-size: 50px
  }
 
@@ -13,3 +15,11 @@
    font-weight: bold;
    font-size: 30px;
  }
+
+div.four {
+  color: white;
+}
+
+a.five {
+  color: green;
+}
