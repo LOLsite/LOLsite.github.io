@@ -2,18 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css2.css">
     <script src="script2.js"></script>
     <title></title>
   </head>
 <body>
-  <div align="center">
-    <p class="two">Сайт был создан Карапетьяном Яном и 7-го "В" <br />
-      За помощь в работе спасибо:</p>
-    <div class="three">
-      <li> Роману Морячкову </li>
-      <li> Павлу Качаеву </li>
-    </div>
+
+   <!--ССЫЛКА НА ВК-->
+  <div>
+   <a href="https://vk.com/ykarap2019">
+     <img src="vk-256x256.png" title="Страница автора" class="fixedbut" width="60" height="60">
+   </a>
+     <style>
+   .fixedbut { position: fixed; bottom: 20px; right: 20px; display: block; color: #fff; text-decoration: none; padding: 6px 23px; font-size: 17px;}
+   </style>
+ </div>
+<h3><a href="index.html">Вернутся на главную страницу</a></h3>
+<div class="button" align="centrer">
+     <img src="questcions.png">
+     <div class="window">
+     <input type="text" id="otvet1">
+     <br />
+     <button id="btn" onclick="nextFunc()">Следующий вопрос</button>
+   </div>
   </div>
 </body>
 </html>

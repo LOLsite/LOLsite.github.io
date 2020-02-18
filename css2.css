@@ -1,13 +1,14 @@
- p.one {
-   text-shadow: 10px 10px 11px green;
-   margin: 0px;
-   font-weight: bolder;
-   color:lime;
-   font-size: 50px;
+ #voprosi {
+   margin-top: 300px;
  }
 
-div.four {
-  color: white;
+#btn{
+  margin-top: 10px;
+}
+
+#back {
+   color: red;
+   font-size: 20px;
 }
 
 .button {
@@ -17,7 +18,7 @@ div.four {
   width: 300px;
 }
 
-.five {
+.window {
   font-weight: bolder;
 	position	: absolute;
 	top		: -30px;
