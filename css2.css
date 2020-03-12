@@ -13,16 +13,17 @@
 
 .button {
 	position	: relative;
-  left		: 510px;
-  top: 250px;
-  width: 300px;
+  left		: 495px;
+  top: 140px;
+  width: 150px;
+  height: 120px;
 }
 
 .window {
   font-weight: bolder;
 	position	: absolute;
-	top		: -30px;
-	left		: 95px;
+	top		: -10px;
+	left		: 60px;
   vertical-align: middle;
 	font-size:  40px;
   color: green;
