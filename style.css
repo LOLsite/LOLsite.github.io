@@ -26,3 +26,9 @@ div.four {
 	font-size:  40px;
   color: green;
 }
+
+.bgi{
+  width:232px;
+  height:50px;
+  position: relative;
+}
